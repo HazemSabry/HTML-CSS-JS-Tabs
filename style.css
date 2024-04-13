@@ -1,0 +1,45 @@
+:root {
+  --nav-hover-background-color: #acd3fa93;
+  --nav-active-background-color: #74b6f893;
+
+  --font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body > nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-content: center;
+}
+
+body > nav > div {
+  cursor: pointer;
+  height: 100%;
+  padding: 1rem;
+  font-size: calc(var(--font-size) * 1.2);
+}
+
+body > nav > div.active {
+  background-color: var(--nav-active-background-color);
+}
+
+body > nav > div:hover {
+  background-color: var(--nav-hover-background-color);
+}
+
+body > .root {
+  padding: 2rem;
+}
